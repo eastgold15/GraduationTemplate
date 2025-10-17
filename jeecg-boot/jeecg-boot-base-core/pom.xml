@@ -127,27 +127,8 @@
 		</dependency>
 
 		<!-- 数据库驱动 -->
-		<!--mysql-->
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>${mysql-connector-java.version}</version>
-			<scope>runtime</scope>
-		</dependency>
-		<!--  sqlserver-->
-		<dependency>
-			<groupId>com.microsoft.sqlserver</groupId>
-			<artifactId>mssql-jdbc</artifactId>
-			<version>${sqljdbc4.version}</version>
-			<scope>runtime</scope>
-		</dependency>
-		<!-- oracle驱动 -->
-		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc6</artifactId>
-			<version>${ojdbc6.version}</version>
-			<scope>runtime</scope>
-		</dependency>
+
+
 		<!-- postgresql驱动 -->
 		<dependency>
 			<groupId>org.postgresql</groupId>
@@ -155,24 +136,7 @@
 			<version>${postgresql.version}</version>
 			<scope>runtime</scope>
 		</dependency>
-		<!--人大金仓驱动 版本号V008R006C005B0013 -->
-		<dependency>
-			<groupId>org.jeecgframework</groupId>
-			<artifactId>kingbase8</artifactId>
-			<version>${kingbase8.version}</version>
-			<scope>runtime</scope>
-		</dependency>
-		<!--达梦数据库驱动 版本号1-3-26-2023.07.26-197096-20046-ENT -->
-		<dependency>
-			<groupId>com.dameng</groupId>
-			<artifactId>DmJdbcDriver18</artifactId>
-			<version>${dm8.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.dameng</groupId>
-			<artifactId>DmDialect-for-hibernate5.0</artifactId>
-			<version>${dm8.version}</version>
-		</dependency>
+
 
 		<!-- Quartz定时任务 -->
 		<dependency>
@@ -281,10 +245,6 @@
 				<exclusion>
 					<artifactId>commons-io</artifactId>
 					<groupId>commons-io</groupId>
-				</exclusion>
-				<exclusion>
-					<artifactId>mysql-connector-java</artifactId>
-					<groupId>mysql</groupId>
 				</exclusion>
 			</exclusions>
 		</dependency>

@@ -7,6 +7,7 @@ import org.jeecg.common.util.oConvertUtils;
 import org.jeecg.config.JeecgBaseConfig;
 import org.jeecg.config.firewall.SqlInjection.IDictTableWhiteListHandler;
 import org.jeecg.config.firewall.interceptor.LowCodeModeInterceptor;
+import org.jeecg.config.vo.Firewall;
 import org.jeecg.modules.system.entity.SysTableWhiteList;
 import org.jeecg.modules.system.security.DictQueryBlackListHandler;
 import org.jeecg.modules.system.service.ISysTableWhiteListService;
