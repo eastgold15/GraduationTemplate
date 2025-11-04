@@ -229,3 +229,42 @@ java -jar -Xms512m -Xmx2048m jeecg-system-start-3.8.3.jar
 ---
 
 **注意**: 本版本针对单体应用进行了优化，如需微服务版本，请参考官方原版项目。
+
+
+
+
+主要业务模块目录
+
+1. 系统模块业务代码：
+- jeecg-module-system/jeecg-system-biz/src/main/java/org/jeecg/modules/
+
+这是系统核心模块，包含：
+- message/ - 消息模块
+- monitor/ - 监控模块
+- openapi/ - 开放API模块
+- oss/ - 文件存储模块
+- quartz/ - 定时任务模块
+
+2. 自定义业务模块：
+   如果你要创建新的业务模块，可以在 jeecg-boot-module/ 下创建新的模块，例如：
+- jeecg-boot-module/jeecg-module-{你的模块名}/
+
+业务代码组织结构
+
+每个业务模块通常按以下结构组织：
+
+src/main/java/org/jeecg/modules/{你的模块}/
+├── controller/     # 控制器层
+├── entity/         # 实体类
+├── service/        # 服务层接口
+├── service/impl/   # 服务层实现
+├── mapper/         # 数据访问层
+├── vo/            # 视图对象
+└── dto/           # 数据传输对象
+
+例如，如果你想写一个订单业务：
+- jeecg-module-order/src/main/java/org/jeecg/modules/order/controller/OrderController.java
+- jeecg-module-order/src/main/java/org/jeecg/modules/order/entity/Order.java
+- jeecg-module-order/src/main/java/org/jeecg/modules/order/service/IOrderService.java
+
+你可以在现有的系统模块中添加业务功能，或者创建新的独立业务模块。

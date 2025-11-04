@@ -178,6 +178,8 @@ spring:
           max-wait: -1
           max-idle: 8
           min-idle: 0
+      repositories:
+        enabled: false
 #mybatis plus 设置
 mybatis-plus:
   mapper-locations: classpath*:org/jeecg/**/xml/*Mapper.xml
@@ -346,3 +348,6 @@ justauth:
     type: default
     prefix: 'demo::'
     timeout: 1h
+
+redis:
+  enabled: false
